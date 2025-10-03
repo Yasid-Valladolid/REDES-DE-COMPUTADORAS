@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes de Computadoras</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Paleta principal:
+           #081824 (fondo oscuro)
+           #4f243c (secundario profundo)
+           #8c3a3e (acento cálido)
+           #8c5e3a (resaltado tierra)
+           #cc8d5a (contraste suave/dorado)
+        */
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            background-color: #f5f7fa;
+            color: #333;
+            line-height: 1.7;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(90deg, #4f243c 0%, #8c3a3e 50%, #cc8d5a 100%);
+            color: white;
+            padding: 25px;
+            text-align: center;
+            border-bottom: 4px solid rgba(8,24,36,0.06);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            font-weight: 700;
+            color: #ffffff; /* blanco */
+            text-shadow: 0 1px 0 rgba(0,0,0,0.2);
+        }
+        /* Subtítulo centrado y blanco */
+        .subtitulo {
+            font-size: 1.15em;
+            font-weight: 300;
+            color: #ffffff; /* blanco */
+            margin-top: 10px;
+            text-align: center;
+            background: rgba(255,255,255,0.12);
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 20px;
+        }
+
+        /* MAIN CARD */
+        main {
+            max-width: 950px;
+            margin: auto;
+            background: white;
+            padding: 35px;
+            box-shadow: 0 6px 24px rgba(8,24,36,0.06);
+            margin-top: 20px;
+            margin-bottom: 30px;
+            border-radius: 12px;
+            border: 1px solid rgba(8,24,36,0.04);
+        }
+
+        /* ENCABEZADOS */
+        h2 {
+            color: #8c3a3e;
+            margin-top: 40px;
+            font-size: 1.8em;
+        }
+        h3 {
+            color: #8c5e3a;
+            margin-top: 25px;
+            font-size: 1.3em;
+        }
+
+        p {
+            text-align: justify;
+            color: #333;
+        }
+
+        img {
+            max-width: 100%;
+            border-radius: 8px;
+            margin: 20px 0;
+            border: 1px solid rgba(8,24,36,0.04);
+            box-shadow: 0 6px 18px rgba(140,58,62,0.06);
+        }
+
+        ul, ol {
+            margin-left: 25px;
+            color: #333;
+        }
+
+        /* Aviso / alerta */
+        .alerta {
+            background: rgba(204,141,90,0.12);
+            border-left: 5px solid #cc8d5a;
+            padding: 15px;
+            margin: 20px 0;
+            color: #2b2b2b;
+            border-radius: 6px;
+        }
+
+        /* Información */
+        .info {
+            background: rgba(140,94,58,0.08);
+            border-left: 5px solid #8c5e3a;
+            padding: 15px;
+            margin: 20px 0;
+            color: #2b2b2b;
+            border-radius: 6px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            background: #4f243c;
+            padding: 20px;
+            font-size: 14px;
+            border-top: 4px solid rgba(8,24,36,0.06);
+            border-radius: 0 0 6px 6px;
+        }
+        /* Aseguramos que el autor quede en blanco */
+        footer p.autor {
+            color: #ffffff !important;
+            margin: 0;
+        }
+
+        strong { color: #081824; }
+        li { margin-bottom: 8px; }
+
+        /* responsive */
+        @media (max-width:600px) {
+            header h1 { font-size: 1.8em; }
+            .subtitulo { font-size: 0.95em; padding: 6px 10px; }
+            main { padding: 18px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Redes de Computadoras</h1>
+        <h2 class="subtitulo">Guía completa: historia, tipos, componentes, seguridad y tendencias modernas</h2>
+    <br><audio autoplay src="F:\py\SONIDOS\¿Qué es una Red？.wav" CONTROLS LOOP>        
+    </audio></brs>
+    </header>
+    <main>
+        <section>
+            <CENTER><img src="F:\py\index\INTRODUCCION.gif" alt="INTRODUCCION" width="300"></CENTER>
+            <h2>Introducción</h2>
+            <p>
+                Una <strong>red de computadoras</strong> es un conjunto de equipos interconectados que comparten recursos, 
+                información y servicios. Son el corazón de la sociedad moderna: permiten la comunicación global, 
+                el funcionamiento de internet, las transacciones financieras, el acceso a la nube y las aplicaciones móviles 
+                que usamos diariamente.
+            </p>
+            <center><img src="F:\py\IMAGENES\Ejemplo de red de computadoras.jpg" alt="Ejemplo de red de computadoras"></center>
+        </section>
+
+        <section>
+            <h2>Historia de las Redes</h2>
+            <p>
+                El concepto de redes de computadoras se remonta a los años 60, cuando se buscaba conectar sistemas 
+                para intercambiar información entre universidades y centros de investigación.
+            </p>
+            <ul>
+                <li><strong>1969:</strong> Se crea <em>ARPANET</em>, precursora del internet actual.</li>
+                <li><strong>1970-1980:</strong> Aparecen las primeras LAN con el protocolo Ethernet.</li>
+                <li><strong>1990:</strong> Nace la <em>World Wide Web</em>, lo que permitió popularizar el acceso a internet.</li>
+                <li><strong>2000 en adelante:</strong> Surgen tecnologías como WiFi, 4G, 5G e IoT.</li>
+            </ul>
+            <center><img src="F:\py\IMAGENES\Historia de Internet.jpg" alt="Historia de Internet"></center>
+        </section>
+
+        <section>
+            <h2>Componentes de una Red</h2>
+            <p>
+                Las redes de computadoras están compuestas por hardware y software que permiten la transmisión de datos.
+            </p>
+            <h3>Dispositivos principales</h3>
+            <ul>
+                <li><strong>Computadoras:</strong> usuarios finales que generan y consumen información.</li>
+                <li><strong>Switches:</strong> distribuyen datos dentro de una red local.</li>
+                <li><strong>Routers:</strong> conectan diferentes redes y permiten la comunicación global.</li>
+                <li><strong>Servidores:</strong> almacenan y proveen información a los clientes.</li>
+                <li><strong>Medios de transmisión:</strong> cables, fibra óptica y señales inalámbricas.</li>
+            </ul>
+            <center><img src="F:\py\fotos\Componentes de una red.png" alt="Componentes de una red"></center>
+        </section>
+
+        <section>
+            <h2>Topologías de Red</h2>
+            <p>La <strong>topología</strong> describe la forma en que los dispositivos están interconectados:</p>
+            <ol>
+                <li><strong>Bus:</strong> todos los equipos comparten un mismo canal.</li>
+                <li><strong>Estrella:</strong> los equipos se conectan a un dispositivo central.</li>
+                <li><strong>Anillo:</strong> los equipos forman un círculo cerrado de comunicación.</li>
+                <li><strong>Malla:</strong> cada dispositivo está conectado a varios otros, ofreciendo redundancia.</li>
+            </ol>
+                <CENTER> <video width="640" height="360" controls autoplay>
+                <source src="/F:\py\videos\Topologías de redes.mp4" type="video/mp4" />
+                </video></CENTER>
+        </section>
+
+        <section>
+            <h2>Clasificación de Redes según su Cobertura</h2>
+            <h3>1. PAN (Personal Area Network)</h3>
+            <p>Conecta dispositivos personales como móviles, tablets y audífonos Bluetooth.</p>
+            <h3>2. LAN (Local Area Network)</h3>
+            <p>Permite conectar computadoras dentro de un espacio reducido como hogares u oficinas.</p>
+            <h3>3. MAN (Metropolitan Area Network)</h3>
+            <p>Conecta múltiples LAN dentro de una ciudad o campus universitario.</p>
+            <h3>4. WAN (Wide Area Network)</h3>
+            <p>Conecta redes a nivel nacional o global, siendo Internet el mayor ejemplo.</p>
+        </section>
+
+        <section>
+            <h2>Protocolos de Comunicación</h2>
+            <p>
+                Los protocolos son reglas que determinan cómo se comunican los dispositivos. El más usado es <strong>TCP/IP</strong>, 
+                pero existen muchos otros:
+            </p>
+            <ul>
+                <li><strong>HTTP/HTTPS:</strong> navegación web.</li>
+                <li><strong>FTP:</strong> transferencia de archivos.</li>
+                <li><strong>SMTP/IMAP:</strong> correo electrónico.</li>
+                <li><strong>DNS:</strong> traduce nombres de dominio en direcciones IP.</li>
+            </ul>
+            <div class="alerta">
+                <strong>Importante:</strong> Sin protocolos, los dispositivos no podrían “entenderse” entre sí.
+            </div>
+        </section>
+
+        <section id="juego">
+          <h2>Juego Interactivo</h2>
+          <p>
+            Aquí puedes disfrutar de un juego mientras aprendes sobre redes de computadoras.
+          </p>
+          <!-- Juego embebido -->
+          <iframe 
+            src="https://gamedistribution.com/games/dan-the-man/" 
+            width="800" 
+            height="600" 
+            style="border: none; display: block; margin: auto;" 
+            allowfullscreen>
+          </iframe>
+
+          <div class="info-box">
+            <strong>Nota:</strong> Este juego es provisto por 
+            <a href="https://www.gamedistribution.com/" target="_blank">GameDistribution</a>. 
+            Se requiere conexión a Internet para jugarlo.
+          </div>
+        </section>
+        <div>
+
+        <section>
+            <h2>Seguridad en Redes</h2>
+            <p>
+                La seguridad en redes busca proteger la información contra accesos no autorizados y ataques cibernéticos.
+            </p>
+            <h3>Principales amenazas:</h3>
+            <ul>
+                <li>Virus y malware.</li>
+                <li>Robo de información (phishing).</li>
+                <li>Ataques DDoS.</li>
+                <li>Intrusiones no autorizadas.</li>
+            </ul>
+            <h3>Buenas prácticas:</h3>
+            <ul>
+                <li>Usar contraseñas seguras.</li>
+                <li>Configurar firewalls y antivirus.</li>
+                <li>Actualizar sistemas operativos y aplicaciones.</li>
+                <li>Encriptar la información sensible.</li>
+            </ul>
+            <center><img src="https://consumid.mx/wp-content/uploads/2023/09/Que-es-la-seguridad-de-la-red.webp" alt="Seguridad en redes"></center>
+        </section>
+
+        <section>
+            <h2>Aplicaciones de las Redes</h2>
+            <ul>
+                <li><strong>Educación:</strong> plataformas de aprendizaje en línea.</li>
+                <li><strong>Salud:</strong> telemedicina y gestión de historiales clínicos.</li>
+                <li><strong>Empresas:</strong> sistemas de gestión y almacenamiento en la nube.</li>
+                <li><strong>Entretenimiento:</strong> videojuegos online, streaming de video y música.</li>
+                <li><strong>Gobiernos:</strong> sistemas de control y servicios digitales al ciudadano.</li>
+            </ul>
+            <center><img src="https://www.softwaredoit.es/images/final-gestion-de-redes-sociales-og.jpg" alt="Aplicaciones de redes"></center>
+        </section>
+
+        <section>
+            <h2>Tendencias Modernas en Redes</h2>
+            <h3>Internet de las Cosas (IoT)</h3>
+            <p>Conecta objetos cotidianos como relojes inteligentes, electrodomésticos y vehículos.</p>
+            <h3>5G</h3>
+            <p>La quinta generación de redes móviles permite mayor velocidad y baja latencia.</p>
+            <h3>Computación en la Nube</h3>
+            <p>Permite almacenar y procesar datos en servidores remotos.</p>
+            <h3>Inteligencia Artificial en Redes</h3>
+            <p>Se utiliza para detectar amenazas y optimizar el tráfico de datos.</p>
+        </section>
+
+        <DIV>
+        <CENTER><iframe src="/F:\py\PDF\84-9788-117-6.pdf" width="800 " height="800 "> </iframe></CENTER>
+        </DIV>
+        <section>
+            <h2>Conclusión</h2>
+            <p>
+                Las <strong>redes de computadoras</strong> son esenciales en la vida moderna. Desde la comunicación instantánea 
+                hasta la gestión empresarial, todo depende de redes seguras, rápidas y confiables. El futuro traerá más 
+                integración con la inteligencia artificial, IoT y tecnologías aún por descubrir.
+            </p>
+            <div class="info">
+                <strong>Reflexión:</strong> Comprender cómo funcionan las redes no solo es importante para los profesionales 
+                de TI, sino también para cualquier persona que interactúe diariamente con la tecnología.
+            </div>
+        </section>
+        <section id="mensaje-seguridad">
+          <h2>💡 Consejo:</h2>
+          <p>Haz clic en el botón para recibir una recomendación importante:</p>
+          <button onclick="mostrarConsejo()" 
+                  style="padding: 10px 20px; background-color: #006400; color: #fff; border: none; border-radius: 8px; cursor: pointer;">
+            Mostrar Consejo
+          </button>
+        </section>
+
+        <script>
+          function mostrarConsejo() {
+              alert("Recuerda: Mientras más practiques, más entenderás cómo realmente funciona una red. La teoría te da el mapa, pero la práctica te enseña el camino.");
+          }
+        </script>
+    </main>
+    <footer>
+        <p class="autor">Autor: Maryori Yasid Valladolid Solón | Proyecto Académico 2025</p>
+    </footer>
+</body>
+</html>
